@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />
           <Route path="/expense" component={ExpenseTracker} />
-          <Route path="/covid" component={Covid19} />
+          <Route path="/covid19" component={Covid19} />
           <Route component={NoMatch} />
         </Switch>
         </div>
