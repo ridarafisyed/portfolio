@@ -1,7 +1,7 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { NavigationBar } from './components/static_pages/NavBar';
+import { NavigationBar } from './components/static_pages/NavigationBar';
 import { Home } from './components/static_pages/Home';
 import { About } from './components/static_pages/About';
 import { NoMatch } from './components/static_pages/NoMatch';
