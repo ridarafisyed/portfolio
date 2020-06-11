@@ -67,6 +67,7 @@ class SideNav extends React.Component {
         );
     }
 }
+console.log (Router);
 
 const RouterSideNav = withRouter(SideNav);
 
