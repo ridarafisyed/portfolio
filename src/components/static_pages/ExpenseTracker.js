@@ -1,5 +1,4 @@
 import React from 'react';
-import { Header } from '../expense_tracker/Header';
 import { Balance } from '../expense_tracker/Balance';
 import { IncomeExpenses } from  '../expense_tracker/IncomeExpenses';
 import { TransactionList } from '../expense_tracker/TransactionList';

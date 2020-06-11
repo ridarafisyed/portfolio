@@ -1,13 +1,12 @@
 import React, {useState, useContext} from 'react'
 import { GlobalContext } from '../context/GlobalState';
-import { Form, Button, size } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 
 export const AddTransaction = () => {
   const [text, setText] = useState('');
   const [amount, setAmount] = useState(0);
-  const [type, setType] = useState(true);
-
+ 
   const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = e => {
@@ -44,21 +43,3 @@ export const AddTransaction = () => {
     </>
   )
 }
-{/* <Form.Group controlId="formBasicCheckbox">
-        <Form.Check
-          type="radio"
-          label="Expense"
-          value = {true}
-          onChange={(e) => setType(e.target.value)}
-          name='expense'
-          id="inline-${type}-3`"
-        />
-        <Form.Check
-          type="radio"
-          value = {false}
-          label="Income"
-          onChange={(e) => setType(e.target.value)}
-          name="expense"
-          id="inline-`"
-        />
-        </Form.Group> */}
