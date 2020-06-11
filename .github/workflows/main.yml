@@ -33,6 +33,9 @@ jobs:
         
     - name: Creating Build 
       run: yarn build
+      
+    - name: Solvint issue
+      run: cd build && cp index.html 200.html
 
     - name: installing surge
       run: npm install -g surge
