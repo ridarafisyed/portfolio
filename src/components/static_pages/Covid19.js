@@ -9,7 +9,7 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(25px, auto);
 `; 
-export const About = () => (
+export const Covid19 = () => (
   <GridWrapper>
     <h2>About Page</h2>
     <p>State at ceiling lay on arms while you're using the keyboard so this human feeds me.</p>

@@ -1,39 +1,23 @@
 import React from 'react';
-import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
-import styled from 'styled-components';
+import { Nav, Navbar, bg, variant } from 'react-bootstrap';
 
-const Styles = styled.div`
-  .navbar { background-color: #222; }
-  a, .navbar-nav, .navbar-light .nav-link {
-    color: lightgray;
-    &:hover { color: white; }
-  }
-  .navbar-brand {
-    font-size: 1.4em;
-    color: lightgray;
-    &:hover { color: white; }
-  }
-  .form-center {
-    position: absolute !important;
-    left: 25%;
-    right: 25%;
-  }
-`;
+
 
 export const NavigationBar = () => (
-  <Styles>
-    <Navbar expand="lg">
+ <div className='sticky_navbar'>
+   <Navbar bg='dark' variant='dark'>
       <Navbar.Brand href="/">Rida Rafi Syed</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-      <Form className="form-center">
-        <FormControl type="text" placeholder="Search" className="" />
-      </Form>
+      
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item> 
-          <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+          
+          <Nav.Item><Nav.Link href="/expense">Expense Tracker</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/covid19">Covid19 Trend</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/contact">Contect</Nav.Link></Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  </Styles>
+    </div>
 )
