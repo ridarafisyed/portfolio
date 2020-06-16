@@ -33,7 +33,7 @@ export const AddTransaction = () => {
         
           <Form.Control ype="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter Item..."  />
         </Form.Group>
-              
+        <h6 className="text-muted">Amount ( '-' : expense, '+' : income)</h6>
         <Form.Group controlId="formBasicText">
           <Form.Control type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..."  />
         </Form.Group>
