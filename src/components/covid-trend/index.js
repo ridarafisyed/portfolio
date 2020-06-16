@@ -9,7 +9,10 @@ import RadialBar from './charts/RadialBar';
 import Header from './header/Header'
 import Splinearea from './charts/Splinearea';
 import SearchCountry from './searchCountry/SearchCountry';
-import Footer from './footer/Footer';
+import CovidFooter from './footer/covidFooter';
+import {Footer} from '../static_pages/Footer';
+
+import './Covid19.css';
 
 //style related import here 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -45,14 +48,17 @@ export default function Covid19() {
     }, []);
   
     return (
-        <Container >
-            <ValueContext.Provider value={{country:countryData, latest:latest}}>
+        
+        <ValueContext.Provider value={{country:countryData, latest:latest}}>
+            <Container className='bg-header-text'>
             <Row>
                 <Col>
                     <Header/>
                 </Col>
             </Row>
-            <Row>
+            </Container>
+            <Container className='bg-header-text'>
+            <Row >
                 <Col>
                     <Cards/>
                 </Col>
@@ -75,13 +81,16 @@ export default function Covid19() {
                     <SearchCountry/>
                 </Col>
             </Row>
+            </Container><Container>
             <Row>
-                <Col>
-                    <Footer/>
+                <Col className='bg-header-text'>
+                    <CovidFooter/>
                 </Col>
             </Row>
-            </ValueContext.Provider>
+            
         </Container>
+        <Footer/>
+        </ValueContext.Provider>
     );
 }
 

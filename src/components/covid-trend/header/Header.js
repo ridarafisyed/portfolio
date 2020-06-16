@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Jumbotron} from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 
 export default function Header() {
     return (
-        <Jumbotron>
+        <div className='jumbotron bg-header-text text-center'>
             <Container sm={4}>
             <h1><i className="fas fa-viruses w3-text-red"></i> Covid-19 : Pandemic Trends</h1>
             <hr />
@@ -16,6 +16,6 @@ export default function Header() {
             <i class="fas fa-shield-virus w3-text-amber"></i> Stay Save. 
             </p>
             </Container>
-      </Jumbotron>
+      </div>
     )
 }

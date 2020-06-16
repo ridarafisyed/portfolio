@@ -152,7 +152,7 @@ export default function SearchCountry() {
   
         return (
             <Row>
-                <Col sm={4} className="card">
+                <Col sm={4} className="card" style={{background:'none'}}>
 
                     <img src={data.countryInfo.flag} alt="{data.country}"/>
                     
@@ -230,7 +230,7 @@ export default function SearchCountry() {
                 <Col style={{padding:"15px"}}>
                 <Form>
                     <Form.Group controlId="formGroupSearch">
-                        <Form.Control type="text" placeholder="Search a Country" 
+                        <Form.Control style={{background:'none'}} type="text" placeholder="Search a Country" 
                         onChange={e => setSearchCountry(e.target.value)}/>
                         <Form.Text className="text-muted">
                         </Form.Text>

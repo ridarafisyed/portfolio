@@ -17,6 +17,21 @@ body {
 }
 
 
+.bg-text {
+  background-color: rgba(f, f, f, 0.1); /* Black w/opacity/see-through */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+
+
+
 .container_glass2 {
   position: absolute; /* or absolute */
   margin-top: 30%;

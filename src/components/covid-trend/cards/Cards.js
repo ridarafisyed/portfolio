@@ -21,7 +21,7 @@ export default function Cards(props) {
                     <h3><NumberFormat value={latest.cases} displayType={'text'} thousandSeparator={true}/></h3>
                     </div>
                     <div className="w3-clear"></div>
-                    <h4>Confirmed Cases</h4>
+                    <h4>Cases</h4>
                 </div>
                 </div>
                 <div className="w3-quarter">

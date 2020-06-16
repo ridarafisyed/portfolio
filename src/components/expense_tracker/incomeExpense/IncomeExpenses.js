@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/GlobalState';
+import { GlobalContext } from '../../context/GlobalState';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export const IncomeExpenses = () => {
   const { transactions } = useContext(GlobalContext);
@@ -17,15 +18,16 @@ export const IncomeExpenses = () => {
   ).toFixed(2);
 
   return (
-    <div className="inc-exp-container">
-        <div>
-          <h4>Income</h4>
-  <p className="money plus">{income}</p>
-        </div>
-        <div>
-          <h4>Expense</h4>
-  <p className="money minus">{expense}</p>
-        </div>
-      </div>
+
+    <Row className="text-center">
+      <Col sm={6}>
+        <h4>Income</h4>
+        <p className="money plus">{income}</p>
+      </Col>
+      <Col sm={6}>
+        <h4>Expense</h4>
+        <p className="money minus">{expense}</p>
+      </Col>
+    </Row>
   )
 }

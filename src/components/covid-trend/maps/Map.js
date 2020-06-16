@@ -37,7 +37,7 @@ export default function Map() {
                 latitude={data.countryInfo.lat} 
                 longitude={data.countryInfo.long}
                 >         
-                 <button className='btn-link btn-lg map_marker' 
+                 <button className='btn btn-link btn-lg map_marker' type='button'
                  title={ data.country +" : " + data.active} 
                  alt={ data.country +" : " + data.active}>
                  <i className='fas fa-virus w3-text-yellow'></i>

@@ -4,6 +4,7 @@ import ValueContext from '../ValueContext';
 import NumberFormat from 'react-number-format';
 import { Container, Card } from 'react-bootstrap';
 
+import '../Covid19.css';
 
 export default function RadialBar() {
     
@@ -78,16 +79,16 @@ export default function RadialBar() {
     
         return (  
           <Container className="chart-card">
-            <Card style={{marginTop:"34px"}}>
+            <Card style={{marginTop:"34px", background:"none"}}>
             <div id="chart" > 
               <ReactApexChart options={state.options} series={state.series} type="pie" height="350"/> 
             </div>
             
-              <Card.Header><h3>Total Cases Reported : <NumberFormat value={latest.cases} displayType={'text'} thousandSeparator={true}/></h3></Card.Header>
+              <Card.Header>Total Cases Reported : <NumberFormat value={latest.cases} displayType={'text'} thousandSeparator={true}/></Card.Header>
               <Card.Body>
                 <Card.Title>
-                <h5>Mild Condition: <NumberFormat value={latest.active - latest.critical} displayType={'text'} thousandSeparator={true}/></h5><br />
-                <h5>Serious or Critical: <NumberFormat value={latest.critical} displayType={'text'} thousandSeparator={true}/></h5>
+                Mild Condition: <NumberFormat value={latest.active - latest.critical} displayType={'text'} thousandSeparator={true}/><br />
+                Serious or Critical: <NumberFormat value={latest.critical} displayType={'text'} thousandSeparator={true}/>
                 
                 </Card.Title>
               </Card.Body>

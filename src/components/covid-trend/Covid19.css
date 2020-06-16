@@ -1,11 +1,23 @@
 .Map{
     padding: 2.5vw;  
 }
+
 .card-pp i:hover{
     color:white;
-    background-color: white;
+    
 }
 .map_marker i:hover {
-    font-size: 25px;
-    color: yellow;
+    font-size: 30px;
   }
+
+  .jumbotron{
+      background: none;
+  }
+  .bg-header-text {
+    background-color: rgba(f, f, f, 0.1); /* Black w/opacity/see-through */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+  }
+  
