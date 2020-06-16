@@ -1,12 +1,13 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from './components/static_pages/NavigationBar';
 import { Home } from './components/static_pages/Home';
 import { Contact } from './components/static_pages/Contact';
 import { NoMatch } from './components/static_pages/NoMatch';
 import {ExpenseTracker} from './components/static_pages/ExpenseTracker';
-import { Covid19 } from './components/static_pages/Covid19';
+import  Covid19  from './components/covid-trend'
 
 
 import './App.css';
