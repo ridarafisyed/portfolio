@@ -18,9 +18,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    padding: 20px;
+    z-index: 0;
+    padding: 10px;
     text-align: center;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
   }
   
+  .home {
+    text-align: center;
+    color: #333333;
+}

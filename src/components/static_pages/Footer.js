@@ -1,7 +1,6 @@
 import React from 'react';
 
-import './StaticPage.css'
-import './General.css'
+import '../../General.css';
 
 
 export const Footer = () => (  

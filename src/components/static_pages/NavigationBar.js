@@ -15,8 +15,7 @@ export const NavigationBar = () => (
         </Nav>
         <Nav>
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/contact">About</Nav.Link>
-          <Nav.Link href="/contact">Contect</Nav.Link>
+          
 
         </Nav>
       </Navbar.Collapse>

@@ -14,10 +14,11 @@ export function ExpenseTracker() {
   return (
     
     <GlobalProvider>
-      <Container fluid>      
-        <h1 className="text-center">ExpenseTracker</h1>
-        
-      <Container  fluid className="bg-text">
+      <Container fluid className=' bg-header-text' style={{width:"80%"}}>   
+
+        <h1 className="text-center display-4 bg-header-text">ExpenseTracker</h1>
+        </Container> 
+      <Container fluid className=' bg-header-text'  style={{width:"80%"}} >
         <Row>
           <Col>
             <Balance />
@@ -37,7 +38,7 @@ export function ExpenseTracker() {
           </Col>
         </Row> 
       </Container>
-      </Container>
+      
       <div className='fixed-bottom'>
         <Footer/>
       </div>
