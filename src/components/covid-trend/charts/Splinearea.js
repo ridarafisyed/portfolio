@@ -7,7 +7,7 @@ import ReactApexChart from 'react-apexcharts';
 
 export default function LineChart() {
     const [count, setCount] = React.useState(0);
-
+    console.log(count)
     const [dailyData, setDailyData] = React.useState([]);
    // const [dailyDate, setDailyDate] = React.useState([]);
     

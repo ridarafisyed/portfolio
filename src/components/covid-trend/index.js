@@ -23,7 +23,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 // covid-19 app 
 export default function Covid19() {
     const [count, setCount] = React.useState(0);
-    
+    console.log(count);
    // Api data states
     const [latest, setLatest] = React.useState([]);
     const [countryData, setCountryData] = React.useState([]);
