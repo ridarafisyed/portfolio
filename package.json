@@ -20,7 +20,7 @@
     "react-map-gl": "^5.2.7",
     "react-number-format": "^4.4.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "styled-components": "^4.3.2",
     "yarn": "^1.22.4"
   },
